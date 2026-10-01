@@ -14,8 +14,12 @@ load_dotenv()
 
 PERSIST_DIR = "chroma_db"
 
-st.set_page_config(page_title="Book Q&A", page_icon="📚", layout="wide")
+st.set_page_config(page_title="Deep Learning RAG Chat Assistant", page_icon="🤖", layout="wide")
 
+st.write(
+    "AI-powered Retrieval-Augmented Generation assistant "
+    "for answering questions from your documents."
+)
 
 # ---------- Cached resources ----------
 @st.cache_resource
